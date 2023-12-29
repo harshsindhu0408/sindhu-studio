@@ -1,1 +1,22 @@
 /* write your css here */
+
+.mainSection {
+  background-image: url("./assets/restaurant-nunta.jpg");
+  height: 750px;
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Adjust text color for better visibility */
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .mainSection {
+    height: 500px; /* Adjust height for smaller screens if needed */
+    background-position: center top; /* Center the background image vertically for smaller screens */
+  }
+}
