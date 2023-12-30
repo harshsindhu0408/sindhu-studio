@@ -1,4 +1,3 @@
-// UserRatings.js
 import { Button } from "@material-tailwind/react";
 import React from "react";
 import CustomButton from "./CustomButton";
@@ -36,15 +35,15 @@ const UserRatings = () => {
   ];
 
   return (
-    <section>
-      <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <section className="bg-cover bg-center mt-10" style={{ backgroundImage: 'url("https://w.forfun.com/fetch/ab/ab2ba4064595dc2d710156d2da81da4b.jpeg")' }}>
+      <div className="mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:flex md:items-end md:justify-between">
-          <div className="max-w-xl">
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <div className="max-w-xl text-white">
+            <h2 className="text-4xl font-bold tracking-tight">
               Read trusted reviews from our customers
             </h2>
 
-            <p className="mt-6 max-w-lg leading-relaxed text-gray-700">
+            <p className="mt-6 max-w-lg leading-relaxed">
               "Experience the magic through our clients' heartfelt words of
               love. Their testimonials, filled with warmth and gratitude,
               reflect the exceptional service and unforgettable moments captured
@@ -54,8 +53,8 @@ const UserRatings = () => {
 
           <Link to={"/testimonials"}>
             <div
-              className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border
-             border-rose-600 px-5 py-3 text-rose-600 transition hover:bg-rose-600 font-medium hover:text-white md:mt-0"
+              className="mt-6 inline-flex shrink-0 items-center gap-2 rounded-full border bg-red-600
+             border-rose-600 px-5 py-3 transition-all duration-200 hover:scale-105 font-medium text-white md:mt-0"
             >
               Read all reviews
             </div>
