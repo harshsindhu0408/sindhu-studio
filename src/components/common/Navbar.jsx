@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full mx-auto flex shadow-lg h-20 items-center justify-center'>
+    <div className='w-full mx-auto px-8 flex shadow-lg h-20 items-center justify-center'>
       <nav className="w-full bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to = {'/'}>
@@ -40,7 +40,7 @@ const Navbar = () => {
               
               {navlinks.map((link) => (
                 <li key={link.id}>
-                  <Link to={link.link} className='block font-Lato font-bold py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent transition-all duration-200 text-sm md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'>{link.name}</Link>
+                  <Link to={link.link} className='block text-xs font-semibold font-Lato ftransition-all duration-200 hover:text-primary md:p-0'>{link.name}</Link>
                 </li>
               ))}
 

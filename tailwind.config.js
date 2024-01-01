@@ -8,14 +8,13 @@ module.exports = {
       sm: "250px",
       md: "700px",
       lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
     },
     extend: {
       fontFamily: {
         FjallaOne: ['Fjalla One', "sans-serif"],
         Roborto: ['Roboto', "sans-serif"],
         Lato: ['Lato', "sans-serif"],
+        Quicksand: ['Quicksand', "sans-serif"],
       },
       colors: {
         primary: "#8d8640",
