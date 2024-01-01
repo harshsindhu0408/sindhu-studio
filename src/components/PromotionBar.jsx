@@ -27,8 +27,11 @@ const PromotionBar = () => {
           </animated.div>
 
           {/* Promotion Text */}
-          <div className='flex items-center'>
+          <div className='flex sm:hidden items-center'>
             Get extra 20% off this wedding session when you try our services!
+          </div>
+          <div className='flex md:hidden items-center'>
+          "Extra 20% Off Wedding Session Offer"
           </div>
 
           {/* Animated Spring Icon - Right */}
