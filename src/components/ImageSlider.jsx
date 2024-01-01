@@ -2,39 +2,31 @@ import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { Carousel } from "@material-tailwind/react";
+import img1 from '../assets/homepageImages/1.jpg'
+import img2 from '../assets/homepageImages/2.jpg'
+import img3 from '../assets/homepageImages/3.jpg'
+import img4 from '../assets/homepageImages/4.jpg'
+import img5 from '../assets/homepageImages/5.jpg'
+import img6 from '../assets/homepageImages/6.jpg'
+import img7 from '../assets/homepageImages/7.jpg'
+import img8 from '../assets/homepageImages/8.jpg'
+import img9 from '../assets/homepageImages/9.jpg'
+import img10 from '../assets/homepageImages/10.jpg'
+import img11 from '../assets/homepageImages/11.jpg'
 
 const ImageSlider = () => {
   const slides = [
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405263/landscape/0Y1A1069_ker0zb.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405258/landscape/0Y1A1094_ix324v.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405255/landscape/0Y1A0751_fslltp.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405253/landscape/DSC_5340_fnq6un.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405253/landscape/DSC_5320_qcdvmo.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405254/landscape/AC2A1013_zlrcex.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405255/landscape/VSPL9247_a1ycbn.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405251/landscape/AC2A0851_yfsorb.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405252/landscape/0Y1A9929_njwuve.jpg",
-    },
-    {
-      url: "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405252/landscape/0Y1A0731_lzkqyg.jpg",
-    },
+    { url: img1 },
+    { url: img2 },
+    { url: img3 },
+    { url: img4 },
+    { url: img5 },
+    { url: img6 },
+    { url: img7 },
+    { url: img8 },
+    { url: img9 },
+    { url: img10 },
+    { url: img11 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

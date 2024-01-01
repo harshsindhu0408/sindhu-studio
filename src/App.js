@@ -1,12 +1,16 @@
 import "./App.css";
-import Home from "./pages/Home";
-import { Routes, Route, Navigate } from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Testimonials from "./pages/Testimonials";
-import AboutUs from "./pages/AboutUs";
-import Portfolio from "./pages/Portfolio";
-import GetQuote from "./pages/GetQuote";
-import WeddingFilms from "./pages/WeddingFilms";
-import Bookings from "./pages/Bookings";
+import Home from "./pages/Home";
+
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const GetQuote = lazy(() => import("./pages/GetQuote"));
+const WeddingFilms = lazy(() => import("./pages/WeddingFilms"));
+const Bookings = lazy(() => import("./pages/Bookings"));
+
+const AboutUs = lazy(() => import("./pages/AboutUs"));
 
 function App() {
   return (
@@ -14,11 +18,46 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/get-quote" element={<GetQuote />} />
-        <Route path="/wedding-films" element={<WeddingFilms />} />
-        <Route path="/bookings" element={<Bookings />} />
+        <Route
+          path="/about-us"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <AboutUs />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Portfolio />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/get-quote"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <GetQuote />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/wedding-films"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <WeddingFilms />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/bookings"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Bookings />
+            </Suspense>
+          }
+        />
       </Routes>
     </main>
   );

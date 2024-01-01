@@ -1,3 +1,47 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /private/          # Disallow private content
+Disallow: /restricted/       # Disallow restricted content
+Disallow: /tmp/              # Disallow temporary content
+Disallow: /cgi-bin/          # Disallow CGI scripts
+Disallow: /admin/            # Disallow admin section
+Disallow: /login/            # Disallow login pages
+
+# Allow crawling of specific content
+Allow: /public/              # Allow crawling of public content
+Allow: /images/              # Allow crawling of images directory
+Allow: /blog/                # Allow crawling of blog pages
+
+# CSS, JavaScript, and images
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+
+# Directories
+Disallow: /includes/
+Disallow: /scripts/
+Disallow: /styles/
+
+# Files
+Disallow: /config.php
+Disallow: /config.inc.php
+Disallow: /settings.ini
+Disallow: /dbconfig.php
+Disallow: /xmlrpc.php
+Disallow: /cron.php
+
+# Sitemap location
+Sitemap: https://www.example.com/sitemap.xml
+
+# Crawlers
+User-agent: Googlebot
+Disallow: /private/
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /restricted/
+

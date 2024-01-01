@@ -1,34 +1,19 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 import { Link } from "react-router-dom";
+import img1 from '../assets/whatWeOffer/01.jpg'
+import img2 from '../assets/whatWeOffer/02.jpg'
+import img3 from '../assets/whatWeOffer/03.jpg'
+import img4 from '../assets/whatWeOffer/04.jpg'
+import img5 from '../assets/whatWeOffer/05.jpg'
 
 const WhatWeOffer = () => {
   const cardData = [
-    {
-      image:
-        "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405223/portrait/DSC_9616_wwyyvy.jpg",
-      text: "WEDDING PHOTOGRAPHY",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405216/portrait/AC2A9082_dczqyx.jpg",
-      text: "PRE WEDDING PHOTOGRAPHY",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405233/portrait/AC2A1543_kyr4w2.jpg",
-      text: "CANDID PHOTOGRAPHY",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405232/portrait/0Y1A0698_ypzjep.jpg",
-      text: "CANDID PHOTOGRAPHY",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dnvjct2if/image/upload/v1686405223/portrait/AC2A0887_xxbwba.jpg",
-      text: "CINEMATIC VIDEOS",
-    },
+    { image: img1, text: "WEDDING PHOTOGRAPHY" },
+    { image: img2, text: "PRE WEDDING PHOTOGRAPHY" },
+    { image: img3, text: "CANDID PHOTOGRAPHY" },
+    { image: img4, text: "CANDID PHOTOGRAPHY" },
+    { image: img5, text: "CINEMATIC VIDEOS" },
   ];
 
   return (
