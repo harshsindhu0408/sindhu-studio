@@ -4,12 +4,12 @@ import { Routes, Route } from "react-router-dom";
 
 import Testimonials from "./pages/Testimonials";
 import Home from "./pages/Home";
-
+import AdminPanel from "./pages/AdminPanel";
+import Loading from "./components/common/Loading";
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const GetQuote = lazy(() => import("./pages/GetQuote"));
 const WeddingFilms = lazy(() => import("./pages/WeddingFilms"));
 const Bookings = lazy(() => import("./pages/Bookings"));
-
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route
           path="/about-us"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
               <AboutUs />
             </Suspense>
           }
@@ -29,7 +29,7 @@ function App() {
         <Route
           path="/portfolio"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
               <Portfolio />
             </Suspense>
           }
@@ -37,7 +37,7 @@ function App() {
         <Route
           path="/get-quote"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
               <GetQuote />
             </Suspense>
           }
@@ -45,7 +45,7 @@ function App() {
         <Route
           path="/wedding-films"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
               <WeddingFilms />
             </Suspense>
           }
@@ -53,11 +53,12 @@ function App() {
         <Route
           path="/bookings"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
               <Bookings />
             </Suspense>
           }
         />
+        <Route path="/admin" element={<AdminPanel />} />
       </Routes>
     </main>
   );

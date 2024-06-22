@@ -7,7 +7,7 @@
 }
 
 .mainSection {
-  background-image: url("./assets/restaurant-nunta.jpg");
+  background-image: url("./assets/main-bg.jpg");
   height: 750px;
   background-size: cover; /* Ensure the image covers the entire container */
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
   justify-content: center;
   text-align: center;
   color: white; /* Adjust text color for better visibility */
+  scroll-behavior: smooth;
 }
 
 .fa-whatsapp  {
@@ -33,4 +34,22 @@
     height: 500px; /* Adjust height for smaller screens if needed */
     background-position: center top; /* Center the background image vertically for smaller screens */
   }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

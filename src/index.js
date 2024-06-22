@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <div className="flex flex-col min-h-screen">
-      <PromotionBar />
+      {/* <PromotionBar /> */}
       <Navbar />
       <div className="flex-grow bg-white">
         <App />

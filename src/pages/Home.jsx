@@ -13,7 +13,6 @@ const Home = () => {
         <p className="md:text-4xl xl:text-5xl 2xl:text-6xl w-11/12 text-center sm:text-2xl mt-10 font-FjallaOne">
           Love in Focus: Our Wedding Photography Collection
         </p>
-
         <ImageSlider />
 
         <p className="text-black w-11/12 xl:text-5xl 2xl:text-6xl text-center sm:text-3xl md:text-4xl font-FjallaOne">
