@@ -17,8 +17,10 @@ const GetQuote = () => {
           hours.
         </h2>
 
-        <button className="flex flex-row items-center justify-center py-2 px-6 bg-white border-2 shadow-xl 
-        font-semibold border-green-500 text-black transition-all duration-200">
+        <button
+          className="flex flex-row items-center justify-center py-2 px-6 bg-white border-2 shadow-xl 
+        font-semibold border-green-500 text-black transition-all duration-200"
+        >
           <FaWhatsapp className="w-6 h-6 mr-2" style={iconStyle} />
           <a
             href="https://api.whatsapp.com/send?phone=9416370132"
@@ -38,20 +40,16 @@ const GetQuote = () => {
       </div>
 
       {/* Google maps div */}
-      <div className="w-full md:w-6/12">
+      <div className="w-full md:mt-14 sm:mt-8 md:w-6/12">
         <div style={{ width: "100%" }}>
           <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3493.414924006284!2d76.61079377633027!3d28.886015775527298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d851e6cd4ddf1%3A0xee20346ea78105df!2sSindhu%20Photo%20Studio!5e0!3m2!1sen!2sin!4v1734059050374!5m2!1sen!2sin"
             width="100%"
-            height="600"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sindhu%20Photo%20Studio,%20Shop%20no.%2017,%20Power%20house,%20Delhi%20Rd,%20opp.%20Balmev%20plaza,%20Dev%20Colony,%20Rohtak,%20Haryana%20124001+(Sindhu%20Digital%20Studio)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            title="Google Map"
-          >
-            <a href="https://www.maps.ie/population/">Find Population on Map</a>
-          </iframe>
+            height="500"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>

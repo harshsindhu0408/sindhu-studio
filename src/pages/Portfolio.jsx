@@ -1,6 +1,6 @@
 // Portfolio.jsx
 import React, { lazy, Suspense } from "react";
-import { imageUrls } from "../imageLinks";
+import { imageUrls } from "../helpers";
 
 const Portfolio = () => {
   return (

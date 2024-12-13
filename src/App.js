@@ -6,6 +6,7 @@ import Testimonials from "./pages/Testimonials";
 import Home from "./pages/Home";
 import AdminPanel from "./pages/AdminPanel";
 import Loading from "./components/common/Loading";
+import Packages from "./pages/Packages";
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const GetQuote = lazy(() => import("./pages/GetQuote"));
 const WeddingFilms = lazy(() => import("./pages/WeddingFilms"));
@@ -21,7 +22,7 @@ function App() {
         <Route
           path="/about-us"
           element={
-            <Suspense fallback={<Loading/>}>
+            <Suspense fallback={<Loading />}>
               <AboutUs />
             </Suspense>
           }
@@ -29,7 +30,7 @@ function App() {
         <Route
           path="/portfolio"
           element={
-            <Suspense fallback={<Loading/>}>
+            <Suspense fallback={<Loading />}>
               <Portfolio />
             </Suspense>
           }
@@ -37,7 +38,7 @@ function App() {
         <Route
           path="/get-quote"
           element={
-            <Suspense fallback={<Loading/>}>
+            <Suspense fallback={<Loading />}>
               <GetQuote />
             </Suspense>
           }
@@ -45,7 +46,7 @@ function App() {
         <Route
           path="/wedding-films"
           element={
-            <Suspense fallback={<Loading/>}>
+            <Suspense fallback={<Loading />}>
               <WeddingFilms />
             </Suspense>
           }
@@ -53,8 +54,16 @@ function App() {
         <Route
           path="/bookings"
           element={
-            <Suspense fallback={<Loading/>}>
+            <Suspense fallback={<Loading />}>
               <Bookings />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/packages"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Packages />
             </Suspense>
           }
         />
